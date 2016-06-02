@@ -83,8 +83,8 @@ window.app = new App($('app'))
 
 })();
 
-var uni = document.querySelector("unicode");
-var zg = document.querySelector("zawgyi");
+var uni = document.querySelector("#unicode");
+var zg = document.querySelector("#zawgyi");
 
 $("#unicode").on("change keyup paste", function(){
     convert(uni);
