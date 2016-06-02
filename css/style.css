@@ -1,3 +1,13 @@
+@font-face {
+  font-family: zawgyi;
+  src: url('../fonts/zg-one.ttf');
+}
+
+@font-face {
+  font-family: unicode;
+  src: url('../fonts/mon3.ttf');
+}
+
 *,
 *:before,
 *:after {
@@ -26,6 +36,43 @@ body {
 body, input {
   display: -webkit-flex;
   font-family: 'Avenir', 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+.cpfb{
+  color:#000;
+  padding:4px;
+  font-size: 0.8rem;
+  background: #FFF;
+  border-radius: 0rem;
+  margin-top:10px;
+}
+
+.title{
+  color:#FFF;
+}
+
+.unicode-textbox{
+  font-family: unicode;
+  margin-bottom: 10px;
+}
+
+.zawgyi-textbox{
+  font-family: zawgyi;
+}
+
+.textbox{
+  width:434px;
+  height:200px;
+}
+
+.converter{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:450px;
+  background:#494949;
+  padding:8px;
+  height:100%;
 }
 
 .age-label {

@@ -82,3 +82,26 @@ App.fn.view = function(name){
 window.app = new App($('app'))
 
 })();
+
+var uni = document.getElementById("unicode");
+var zg = document.getElementById("zawgyi");
+
+$("#unicode").on("change keyup paste", function(){
+    convert(uni);
+});
+
+$("#zawgyi").on("change keyup paste", function(){
+    convert(zg);
+});
+
+function convert(textbox){
+  switch (textbox.id) {
+    case "unicode":
+      zg.value = uni2zg(uni.value);
+      break;
+    case "zawgyi":
+      console.log(zg2uni(zg.value));
+      break;
+    default: break;
+  }
+}

@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="converter">
+  <h2 class="title">Unicode <-> Zawgyi converter</h2>
+  <form>
+    <h4 class="title">Unicode</h4>
+  <textarea id="unicode" class="unicode-textbox textbox"></textarea>
+  <h4 class="title">Zawgyi</h4>
+  <textarea id="zawgyi" class="zawgyi-textbox textbox"></textarea>
+  <form>
+</div>
 <div id="app"></div>
 
 <script id="dob-template" type="text/x-handlebars-template">
@@ -22,13 +30,13 @@
     </footer>
   <form>
 </script>
-
 <script id="age-template" type="text/x-handlebars-template">
   <h1 class="age-label">AGE</h1>
   <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
 </script>
-
+<script src="js/jquery.js"></script>
 <script src="js/handlebars.js"></script>
+<script src="js/rabbit.js"></script>
 <script src="app/app.js"></script>
 
 </body>
