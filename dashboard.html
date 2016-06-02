@@ -10,34 +10,36 @@
 </head>
 <body>
 <div class="converter">
-  <h2 class="title">Unicode <-> Zawgyi converter</h2>
-  <form>
+  <h3 class="open">Open Converter</h3>
+    <h2 class="title">Unicode <-> Zawgyi converter</h2>
     <h4 class="title">Unicode</h4>
-  <textarea id="unicode" class="unicode-textbox textbox"></textarea>
-  <h4 class="title">Zawgyi</h4>
-  <textarea id="zawgyi" class="zawgyi-textbox textbox"></textarea>
-  <form>
-</div>
-<div id="app"></div>
+    <textarea id="unicode" class="unicode-textbox textbox"></textarea>
+    <h4 class="title">Zawgyi</h4>
+    <textarea id="zawgyi" class="zawgyi-textbox textbox"></textarea>
+    <textarea class="copy-textarea" style="width:0px;height:0px;" hidden="hidden"></textarea>
+    <button class="copyFacebook">Copy for Facebook</button>
+    <h3 class="copy-result is-paused"></h3>
+  </div>
+  <div id="app"></div>
 
-<script id="dob-template" type="text/x-handlebars-template">
-  <form>
-    <h1 id="dob" class="age-label">When were you born?</h1>
+  <script id="dob-template" type="text/x-handlebars-template">
+    <form>
+      <h1 id="dob" class="age-label">When were you born?</h1>
 
-    <footer>
-      <input type="date" name="dob" id="dob">
-      <button type="submit">Motivate</button>
-    </footer>
-  <form>
-</script>
-<script id="age-template" type="text/x-handlebars-template">
-  <h1 class="age-label">AGE</h1>
-  <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
-</script>
-<script src="js/jquery.js"></script>
-<script src="js/handlebars.js"></script>
-<script src="js/rabbit.js"></script>
-<script src="app/app.js"></script>
+      <footer>
+        <input type="date" name="dob" id="dob">
+        <button type="submit">Motivate</button>
+      </footer>
+      <form>
+      </script>
+      <script id="age-template" type="text/x-handlebars-template">
+        <h1 class="age-label">AGE</h1>
+        <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
+      </script>
+      <script src="js/jquery.js"></script>
+      <script src="js/handlebars.js"></script>
+      <script src="js/rabbit.js"></script>
+      <script src="app/app.js"></script>
 
-</body>
-</html>
+    </body>
+    </html>
