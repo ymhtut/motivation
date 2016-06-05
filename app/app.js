@@ -114,12 +114,6 @@ function controlConverter(){
   }
 }
 
-document.body.onkeyup = function(e){
-    if(e.keyCode == 32){
-        controlConverter();
-    }
-}
-
 copyFacebook.addEventListener('click', function(event) {
   var copyTextarea = document.querySelector('.copy-textarea');
   var copyResult = document.querySelector('.copy-result');
