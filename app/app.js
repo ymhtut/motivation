@@ -98,6 +98,10 @@ var copyFacebook = document.querySelector('.copyFacebook');
 var open = document.querySelector('.open');
 
 open.addEventListener('click', function(event) {
+  controlConverter();
+});
+
+function controlConverter(){
   var converter = document.querySelector('.converter');
   if(open.classList.contains('is-opened')){
     open.classList.remove('is-opened');
@@ -108,7 +112,13 @@ open.addEventListener('click', function(event) {
     open.innerHTML = "Close Converter";
     converter.style.marginLeft = "0px";
   }
-});
+}
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        controlConverter();
+    }
+}
 
 copyFacebook.addEventListener('click', function(event) {
   var copyTextarea = document.querySelector('.copy-textarea');
